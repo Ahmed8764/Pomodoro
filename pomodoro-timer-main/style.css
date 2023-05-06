@@ -1,0 +1,99 @@
+:root {
+    font-size: 62.5%; /* 1rem = 10px */
+
+    --color-primary: #337ea9;
+    --color-secondary: #337ea9;
+    --color-font: #55534e;
+
+    --color-shadow: hsl(235, 36%, 35%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    background-color: #fffff;
+    font-size: 1.6rem;
+    font-family: 'Open sans', sans-serif;
+}
+
+p,
+i,
+h1 {
+    color: var(--color-font);
+}
+
+i {
+    font-size: 3.2rem;
+}
+
+h1 {
+    font-size: 3.2rem;
+}
+
+/* ==== CONTENT ==== */
+
+section {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.container {
+    width: min(42.5rem, 100%);
+    margin-inline: auto;
+    padding-inline: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+
+.painel p {
+    align-items: center;
+    text-align: center;
+
+}
+
+
+
+
+
+
+
+.time {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+
+.time p {
+    font-size: 5.6rem;
+}
+
+.time p:nth-of-type(2) {
+    position: relative;
+    top: -.5rem;
+    margin-inline: 1rem;
+}
+
+.controls {
+    margin-top: 3rem;
+}
+
+.controls button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.controls #reset {
+    display: none;
+}
